@@ -1,0 +1,36 @@
+.contenedor{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    padding: 0 50px;
+}
+
+
+.contenedor_icon{
+    background-color: #0E1817;
+    border: #F24405 solid 2px;
+    margin-left: 50px;
+    margin-right: 24px;
+}
+
+.icon{
+    color: #F24405;
+    width: 15px;
+}
+
+.info{
+    color: white;
+    font-size: 20px;
+    padding: 0 50px; 
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.image{
+    margin-left: 50px;
+    width: 300px;
+    height: 200px;
+    border: #F24405 solid 2px;
+}

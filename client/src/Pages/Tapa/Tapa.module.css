@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&family=Work+Sans:wght@400;600;700&display=swap');
+
+
+body{
+    background-color: black;
+}
+
+/* .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+.contenedor{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+}
+
+.hi{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: -25px;
+    margin-left: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(70);
+}
+@keyframes typing {
+    from {
+         width: 0;
+    }
+    to {
+          width: 100%;
+    }
+}
+
+
+.titulo2{
+    font-family: 'Work Sans', sans-serif;
+    color: #9C3E08;
+    text-transform: uppercase;
+    margin-top: 32px;
+    font-size: 55px;
+}
+
+.titulo{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    margin-left: -392px;
+    font-size: 55px;
+    background-color: white;
+    animation: remove-bg-color 0.1s forwards;
+    animation-delay: 1.8s;
+  }
+ /* @keyframes remove-bg-color {
+    to {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+*/
+.titulos{
+    display: flex;
+    margin-bottom: -40px;
+    visibility: hidden;
+    animation:scale-up-horizontal-left 0.7s forwards;
+    animation-delay: 1.2s;
+}
+@keyframes scale-up-horizontal-left{
+    0%{
+        transform:scaleX(.4);
+        transform-origin:left center
+    }100%{
+        transform:scaleX(1);
+        transform-origin:left center;
+        visibility: visible;
+    }
+}
+@keyframes remove-bg-color {
+    to {
+      background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+
+.go{
+    margin-left: 400px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F24405;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    visibility: hidden;
+    animation: scale-up-center 0.8s forwards; /* shake-left-right 0.8s 0.8s linear both forwards;*/
+    animation-delay: 3.2s;
+}
+@keyframes scale-up-center{ 
+    0%{
+        
+        transform:scale(.1);  
+    }100%{
+        transform:scale(1);
+        visibility: visible;
+    } 
+}
+/* @keyframes shake-left-right{
+    100%{
+        transform:rotate(0deg);
+        transform-origin:50% 50%
+    }10%{
+        transform:rotate(8deg)
+    }20%,40%,60%{
+        transform:rotate(-10deg)
+    }30%,50%,70%{
+        transform:rotate(10deg)
+    }80%{
+        transform:rotate(-8deg)
+    }90%{
+        transform:rotate(8deg);
+    }
+} */
+
+
+.go:hover{
+    background-color: white;
+    color: #F24405;
+}

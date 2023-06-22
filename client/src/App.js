@@ -1,9 +1,17 @@
+import { Route, Routes} from 'react-router-dom';
+
+import Tapa from './Pages/Tapa/Tapa';
+import Home from './Pages/Home/Home';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Henry Videogames</h1>
+    <div>
+      <Routes>
+        <Route path="/" element={<Tapa />} />
+          <Route path="/videogames" element={<Home />} />
+      </Routes>
     </div>
   );
 }
